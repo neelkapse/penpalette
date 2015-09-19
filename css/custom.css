@@ -5,6 +5,8 @@
  */
 
 body, section {			/* Change width and height to own preferences */
+	background-color: white;
+	color: #107FC9;
 	width: 500px;
 	height: 400px;
 	overflow-x: hidden;
@@ -13,19 +15,26 @@ body, section {			/* Change width and height to own preferences */
 /* Basic style tweaks */
 /*section { padding: 5px;}
 */.navbar-nav > li > a {
-	padding-top:5px !important; 
-	padding-bottom:5px !important;
+	padding-top:5px; 
+	padding-bottom:5px;
 }
 .navbar {
 	min-height:32px !important
 }
 .list-group-item {
-	padding-top: 5px;
-	padding-bottom: 5px;
+	background-color: #73C2FF;
+	padding-top: 7px;
+	padding-bottom: 7px;
 }
-.panel {
-	padding-top: 10px;
-	padding-bottom: 10px;
+.list-group-item[aria-active="true"]{
+    background-color: #73C2FF;
+}
+.list-group-sub-item {
+	background-color: #EDF7FF;
+}
+.list-group-panel {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 /* Scroll Bar */

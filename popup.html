@@ -7,12 +7,14 @@
     
     <!-- Scripts -->
     <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     
     <!-- Cascading Style Sheets -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/custom.css" rel="stylesheet" media="screen">  
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </head>
   
   <body>
@@ -23,7 +25,7 @@
       </div> -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
-          <li class="active">
+          <li>
             <a href="#">Recommended</a>
           </li>
           <li>
@@ -67,12 +69,71 @@
     </nav>
     
     <section>
+      <div id="recList">
+        <div class="list-group panel">
+          <a href="#site1" class="list-group-item" data-toggle="collapse" data-parent="#recList">
+            Website 1
+          </a>
+          <div class="collapse" id="site1">
+            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
+            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
+            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
+          </div>
+          <a href="#site2" class="list-group-item" data-toggle="collapse" data-parent="#recList">
+            Website 2
+          </a>
+          <div class="collapse" id="site2">
+            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
+            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
+            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
+          </div>
+          <a href="#site3" class="list-group-item" data-toggle="collapse" data-parent="#recList">
+            Website 3
+          </a>
+          <div class="collapse" id="site3">
+            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
+            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
+            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
+          </div>
+          <a href="#site4" class="list-group-item" data-toggle="collapse" data-parent="#recList">
+            Website 4
+          </a>
+          <div class="collapse" id="site4">
+            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
+            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
+            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
+          </div>
+          <a href="#site5" class="list-group-item" data-toggle="collapse" data-parent="#recList">
+            Website 5
+          </a>
+          <div class="collapse" id="site5">
+            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
+            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
+            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--     <section>
       <div class="panel panel-default">
         <div class="panel-body">
           <ul class="list-group">
             <li class="list-group-item">
               <span class="badge">14</span>
               <a href="https://bigredhacks.com">Big Red Hacks</a>
+            </li>
+            <li>
+              <div class="panel panel-default">
+                <div class="panel-heading">Panel heading</div>
+                <ul class="list-group">
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Morbi leo risus</li>
+                  <li class="list-group-item">Porta ac consectetur ac</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+              </div>
             </li>
             <li class="list-group-item">
               <span class="badge">14</span>
@@ -85,6 +146,6 @@
           </ul>
         </div>
       </div>
-    </section>  
+    </section>   -->
   </body>
 </html>
