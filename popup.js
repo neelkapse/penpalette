@@ -143,25 +143,37 @@ function renderStatus(statusText) {
 	document.getElementById('status').textContent = statusText;
 }
 
+function generateListEntry(listData, i) {
+  var listData 
+}
+
 document.addEventListener('DOMContentLoaded', function() {
-  console.log("test");
+  
+  var MongoClient = require('mongodb').MongoClient;
+  MongoClient.connect("mongodb://localhost:27017/exampleDb", function(err, db) {
+    if(!err) {
+      console.log("We are connected");
+    }
+  });
+  var collection = db.collection('Users');
+
   getCurrentTabUrl(function(url) {
     // Put the image URL in Google search.
     renderStatus('Adding info to database for ' + url);
 
-    //Store url in server under userId's history
-    sendMessage(url); 
-    console.log(url);
+    var listData = collection.findOne({email: getEmail()}, {recommendationList: 1});
+    var collection = db.collection('test');
+    var reclist = document.getElementById('recList');
+    for(var i = 0; i < 5; i++) {
+      var listEntry = document.createElement("list-group-item");
+      listEntry.innerHTML = generateListEntry(listData, i);
+    }
 
-    	var imageResult = document.getElementById('image-result');
-      	// Explicitly set the width/height to minimize the number of reflows. For
-      	// a single image, this does not matter, but if you're going to embed
-      	// multiple external images in your page, then the absence of width/height
-      	// attributes causes the popup to resize multiple times.
-      	imageResult.width = width;
-      	imageResult.height = height;
-      	imageResult.src = imageUrl;
-      	imageResult.hidden = false;
+    var imageResult = document.getElementById('image-result');
+      imageResult.width = width;
+      imageResult.height = height;
+      imageResult.src = imageUrl;
+      imageResult.hidden = false;
 
     }, function(errorMessage) {
       renderStatus('Cannot display image. ' + errorMessage);

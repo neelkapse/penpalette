@@ -11,9 +11,10 @@
     
     <!-- Cascading Style Sheets -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/custom.css" rel="stylesheet" media="screen">  
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>  
+    <link href="css/custom.css" rel="stylesheet" media="screen">  
+
   </head>
   
   <body>
@@ -25,21 +26,18 @@
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
           <li>
-            <a href="#">Recommended</a>
-          </li>
-          <li>
-            <a href="#">Based on Facebook</a>
+            <ul class="nav nav-pills col-xs-12">
+              <li><a href="#a" data-toggle="tab">1</a></li>
+              <li><a href="#b" data-toggle="tab">2</a></li>
+            </ul>
           </li>
           <li>
             <a href="#">
               <i class="glyphicon glyphicon-heart"></i>
             </a>
           </li>
-          <!-- <ul class="nav nav-tabs">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">Profile</a></li>
-            <li role="presentation"><a href="#">Messages</a></li>
-          </ul> -->
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
               <i class="glyphicon glyphicon-cog"></i>
@@ -69,82 +67,96 @@
     
     <section>
       <div id="recList">
-        <div class="list-group panel">
-          <a href="#site1" class="list-group-item" data-toggle="collapse" data-parent="#recList">
-            Website 1
-          </a>
-          <div class="collapse" id="site1">
-            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
-            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
-            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
+      <div class="tabbable">
+        <div class="tab-content col-xs-12 col-sm-6 col-lg-1">
+          <div class="tab-pane active" id="a">
+            <div class="list-group panel">
+              <a href="#site1" class="list-group-item" data-toggle="collapse" data-parent="#recList">
+                Website 1
+              </a>
+              <div class="collapse" id="site1">
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
+              </div>
+              <a href="#site2" class="list-group-item" data-toggle="collapse" data-parent="#recList">
+                Website 2
+              </a>
+              <div class="collapse" id="site2">
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
+              </div>
+              <a href="#site3" class="list-group-item" data-toggle="collapse" data-parent="#recList">
+                Website 3
+              </a>
+              <div class="collapse" id="site3">
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
+              </div>
+              <a href="#site4" class="list-group-item" data-toggle="collapse" data-parent="#recList">
+                Website 4
+              </a>
+              <div class="collapse" id="site4">
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
+              </div>
+              <a href="#site5" class="list-group-item" data-toggle="collapse" data-parent="#recList">
+                Website 5
+              </a>
+              <div class="collapse" id="site5">
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
+              </div>
+            </div>
           </div>
-          <a href="#site2" class="list-group-item" data-toggle="collapse" data-parent="#recList">
-            Website 2
-          </a>
-          <div class="collapse" id="site2">
-            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
-            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
-            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
-          </div>
-          <a href="#site3" class="list-group-item" data-toggle="collapse" data-parent="#recList">
-            Website 3
-          </a>
-          <div class="collapse" id="site3">
-            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
-            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
-            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
-          </div>
-          <a href="#site4" class="list-group-item" data-toggle="collapse" data-parent="#recList">
-            Website 4
-          </a>
-          <div class="collapse" id="site4">
-            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
-            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
-            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
-          </div>
-          <a href="#site5" class="list-group-item" data-toggle="collapse" data-parent="#recList">
-            Website 5
-          </a>
-          <div class="collapse" id="site5">
-            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
-            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
-            <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
+          <div class="tab-pane" id="b">
+            <div class="list-group panel">
+              <a href="#site6" class="list-group-item" data-toggle="collapse" data-parent="#recList">
+                Website 6
+              </a>
+              <div class="collapse" id="site6">
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
+              </div>
+              <a href="#site7" class="list-group-item" data-toggle="collapse" data-parent="#recList">
+                Website 7
+              </a>
+              <div class="collapse" id="site7">
+              </div>
+              <a href="#site8" class="list-group-item" data-toggle="collapse" data-parent="#recList">
+                Website 8
+              </a>
+              <div class="collapse" id="site8">
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
+              </div>
+              <a href="#site9" class="list-group-item" data-toggle="collapse" data-parent="#recList">
+                Website 9
+              </a>
+              <div class="collapse" id="site9">
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
+              </div>
+              <a href="#site10" class="list-group-item" data-toggle="collapse" data-parent="#recList">
+                Website 10
+              </a>
+              <div class="collapse" id="site10">
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 1</a>
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 2</a>
+                <a href="javascript:;" class="list-group-item list-group-sub-item">Subitem 3</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-<!--     <section>
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <span class="badge">14</span>
-              <a href="https://bigredhacks.com">Big Red Hacks</a>
-            </li>
-            <li>
-              <div class="panel panel-default">
-                <div class="panel-heading">Panel heading</div>
-                <ul class="list-group">
-                  <li class="list-group-item">Cras justo odio</li>
-                  <li class="list-group-item">Dapibus ac facilisis in</li>
-                  <li class="list-group-item">Morbi leo risus</li>
-                  <li class="list-group-item">Porta ac consectetur ac</li>
-                  <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <span class="badge">14</span>
-              <a href="https://reddit.com">Reddit</a>
-            </li>
-            <li class="list-group-item">
-              <span class="badge">14</span>
-              <a href="https://google.com">Google</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>   -->
   </body>
 </html>

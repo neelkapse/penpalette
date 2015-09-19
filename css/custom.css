@@ -6,25 +6,35 @@
 
 body, section {			/* Change width and height to own preferences */
 	background-color: white;
-	color: #107FC9;
-	width: 500px;
-	height: 400px;
-	overflow-x: hidden;
+	color: #D1D6E3;
+	width: 300px;
 }
 
-/* Basic style tweaks */
-/*section { padding: 5px;}
-*/.navbar-nav > li > a {
+.navbar-default a {
+	color: #D1D6E3;
+}
+.navbar-nav > li > a {
 	padding-top:5px; 
 	padding-bottom:5px;
 }
 .navbar {
-	min-height:32px !important
+	min-height:32px;
 }
+.nav-pills {
+	min-height:32px;
+}
+.nav-pills > li > a {
+	padding-top:5px; 
+	padding-bottom:5px;	
+}
+
 .list-group-item {
 	background-color: #73C2FF;
 	padding-top: 7px;
 	padding-bottom: 7px;
+}
+.list-group-panel a {
+	color: #D1D6E3;
 }
 .list-group-item[aria-active="true"]{
     background-color: #73C2FF;
@@ -35,15 +45,4 @@ body, section {			/* Change width and height to own preferences */
 .list-group-panel {
 	margin-top: 10px;
 	margin-bottom: 10px;
-}
-
-/* Scroll Bar */
-::-webkit-scrollbar { 
-	width: 6px; 
-}
-::-webkit-scrollbar-track { 
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-}
-::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive  { 
-	background: red; 
 }
